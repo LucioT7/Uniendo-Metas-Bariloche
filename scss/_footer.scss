@@ -1,0 +1,62 @@
+footer { font-family: Gotham, Helvetica, Verdana, Sans Serif; 
+			color: white ; 
+			background-image: linear-gradient(to bottom, #2F2E2E , #121111); }
+
+.footer__conteiner { 
+	display: flex;
+	justify-content: center; 
+	.footer__caja { 
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr 3fr;
+		grid-template-areas: 
+			"redes contacto"
+			"InfoRedes InfoContacto";
+		justify-items: center;
+		width: 80%;
+		#Redes { grid-area: redes ; }
+		#Contacto { grid-area: contacto ; }
+		#InfoRedes { grid-area: InfoRedes ; }
+		#InfoContacto { grid-area: InfoContacto ;
+						text-align: center; }
+		.footer__titulos {
+			font-weight: bold; 
+			font-size: 1.5rem;
+		}
+		.footer__informacion { 
+			font-size: 1.2rem;
+			line-height: 3.0;
+			.footer__links { 
+			color: white;
+			text-decoration-line: none;
+			padding: 4px;
+			border-radius: 2px;
+			transition: 0.5s;
+			}
+			.footer__links:hover { 
+				text-decoration-line: none;
+				font-weight: bold;
+				color: black;
+				background-color: white;
+			}
+			.footer__logos { 
+				margin-right: 10px
+			}
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

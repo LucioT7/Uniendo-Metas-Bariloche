@@ -1,0 +1,40 @@
+header { text-align: center; }
+
+
+
+.navegador__conteiner { 
+	display: flex; 
+	justify-content: center; 
+	.navegador__barra { 
+		display: flex; 
+		flex-direction: row; 
+		justify-content: space-around;
+		font-size: 1.4rem; 
+		font-family: Gotham, Helvetica, Verdana, Sans Serif; 
+		width: 90%; 
+		.navegador__pagina { 
+			color: $verde; 
+			transition: 0.5s;
+			text-decoration-line: none; 
+		}
+		.navegador__pagina:hover { 
+			color: $bordo;
+			text-decoration-line: none;
+		}
+		.navegador__select { 
+			font-weight: bold; 
+			color: $bordo;
+			text-decoration-line: none; 
+		}
+		.navegador__select:hover { 
+			font-weight: bold; 
+			color: $bordo;
+			text-decoration-line: none; 
+		}
+		a { 
+			text-decoration-line: none; 
+		} 
+
+	}
+
+}

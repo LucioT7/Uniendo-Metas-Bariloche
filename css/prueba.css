@@ -1,0 +1,406 @@
+header {
+  text-align: center; }
+
+.navegador__conteiner {
+  display: flex;
+  justify-content: center; }
+  .navegador__conteiner .navegador__barra {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    font-family: Gotham, Helvetica, Verdana, Sans Serif;
+    width: 90%; }
+    .navegador__conteiner .navegador__barra .navegador__pagina {
+      color: #73A950;
+      transition: 0.5s;
+      text-decoration-line: none; }
+    .navegador__conteiner .navegador__barra .navegador__pagina:hover {
+      color: #A02140;
+      text-decoration-line: none; }
+    .navegador__conteiner .navegador__barra .navegador__select {
+      font-weight: bold;
+      color: #A02140;
+      text-decoration-line: none; }
+    .navegador__conteiner .navegador__barra .navegador__select:hover {
+      font-weight: bold;
+      color: #A02140;
+      text-decoration-line: none; }
+    .navegador__conteiner .navegador__barra a {
+      text-decoration-line: none; }
+
+section {
+  background-image: url(imagenes/fondo2.png);
+  font-family: Gotham, Helvetica, Verdana, Sans Serif; }
+
+/*FRANJAS*/
+.franja__conteiner {
+  width: 100%;
+  height: 450px; }
+  .franja__conteiner .franja__imagen {
+    width: 100%;
+    height: 100%; }
+  .franja__conteiner .franja__caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: relative;
+    bottom: 270px; }
+    .franja__conteiner .franja__caja .franja__titulo {
+      color: white;
+      font-size: 3.5rem;
+      font-weight: bold;
+      letter-spacing: 3px; }
+
+/*INDEX*/
+.TituloInicio {
+  color: #A02140;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold; }
+
+.TextoInicio {
+  color: #646467;
+  font-size: 1.5rem;
+  text-align: center; }
+
+.Index {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "participantes escuelas voluntarios";
+  justify-content: space-around; }
+  .Index .Index__flex {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .Index .Index__flex .Index__flex--participantes {
+      grid-area: participantes; }
+    .Index .Index__flex .Index__flex--escuelas {
+      grid-area: escuelas; }
+    .Index .Index__flex .Index__flex--voluntarios {
+      grid-area: voluntarios; }
+    .Index .Index__flex .Index__caja {
+      background-color: beige;
+      width: 300px;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.6;
+      padding-bottom: 20px;
+      color: #646467; }
+      .Index .Index__flex .Index__caja .Index__titulo {
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: #646467; }
+      .Index .Index__flex .Index__caja .Index__SubTitulo {
+        font-size: 1rem;
+        font-weight: bold;
+        display: inline;
+        line-height: 1.8;
+        color: #646467; }
+
+/*SOBRE NOSOTROS*/
+.FranjaSN {
+  width: 100%;
+  height: 500px;
+  display: inline-block; }
+  .FranjaSN .FranjaSN__imagen {
+    width: 100%;
+    height: 500px; }
+  .FranjaSN .FranjaSN__titulo {
+    width: 500px;
+    height: 60px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    bottom: 300px;
+    left: 120px; }
+  .FranjaSN .FranjaSN__CajaLateral {
+    width: 35%;
+    height: 100%;
+    float: right;
+    position: relative;
+    bottom: 560px;
+    background-color: rgba(255, 255, 255, 0.8); }
+    .FranjaSN .FranjaSN__CajaLateral .FranjaSN__SubTitulo {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #646467;
+      text-align: center;
+      letter-spacing: 3px;
+      padding: 0px; }
+    .FranjaSN .FranjaSN__CajaLateral .FranjaSN__SubTitulo--color {
+      color: #A02140; }
+    .FranjaSN .FranjaSN__CajaLateral .FranjaSN__texto {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: center; }
+
+.TituloSN {
+  color: #646467;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px; }
+
+.ParticipantesSN {
+  display: flex;
+  justify-content: space-around;
+  width: 100%; }
+  .ParticipantesSN .ParticipantesSN__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    width: 80%; }
+    .ParticipantesSN .ParticipantesSN__grid .ParticipantesSN__cajas {
+      height: 450px; }
+      .ParticipantesSN .ParticipantesSN__grid .ParticipantesSN__cajas .ParticipantesSN__texto {
+        display: inline-block;
+        background-color: white;
+        border: solid 0.5px;
+        width: 90%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        font-weight: lighter;
+        color: #gris;
+        position: relative;
+        bottom: 80px;
+        left: 13.5px; }
+        .ParticipantesSN .ParticipantesSN__grid .ParticipantesSN__cajas .ParticipantesSN__texto .ParticipantesSN__titulo {
+          font-size: 1.4rem;
+          letter-spacing: 2px;
+          font-weight: normal;
+          color: #646467; }
+        .ParticipantesSN .ParticipantesSN__grid .ParticipantesSN__cajas .ParticipantesSN__texto .ParticipantesSN__titulo--CdC {
+          letter-spacing: 1px; }
+
+/*RECURSOS*/
+.TituloRecursos {
+  font-size: 2rem;
+  text-align: center;
+  color: #646467; }
+
+.descarga__conteiner {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: "imagen caja";
+  justify-items: center;
+  align-items: center; }
+  .descarga__conteiner .descarga__ImagenRegDin {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    grid-area: imagen; }
+  .descarga__conteiner .descarga__CajaRegDin {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: 700px;
+    grid-area: caja; }
+    .descarga__conteiner .descarga__CajaRegDin .descarga__RegDin {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #646467; }
+      .descarga__conteiner .descarga__CajaRegDin .descarga__RegDin .descarga__LinkReg {
+        font-size: 1.5rem;
+        background-color: #E15829;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.5s; }
+      .descarga__conteiner .descarga__CajaRegDin .descarga__RegDin .descarga__LinkReg:hover {
+        color: #E15829;
+        background-color: white;
+        border: solid 3px #E15829; }
+      .descarga__conteiner .descarga__CajaRegDin .descarga__RegDin .descarga__LinkDin {
+        font-size: 1.5rem;
+        background-color: #FFB819;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        transition: 0.5s; }
+      .descarga__conteiner .descarga__CajaRegDin .descarga__RegDin .descarga__LinkDin:hover {
+        color: #FFB819;
+        background-color: white;
+        border: solid 3px #FFB819; }
+  .descarga__conteiner .descarga__ImagenTopicos {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    grid-area: imagen; }
+  .descarga__conteiner .descarga__CajaTopicos {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 400px;
+    grid-area: caja; }
+    .descarga__conteiner .descarga__CajaTopicos .descarga__Topicos {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #646467; }
+      .descarga__conteiner .descarga__CajaTopicos .descarga__Topicos .descarga__LinkTopicos {
+        font-size: 1.5rem;
+        background-color: #73A950;
+        color: white;
+        padding: 10px 50px;
+        border-radius: 10px;
+        transition: 0.5s; }
+      .descarga__conteiner .descarga__CajaTopicos .descarga__Topicos .descarga__LinkTopicos:hover {
+        color: #73A950;
+        background-color: white;
+        border: solid 3px #73A950; }
+
+.btn-topico {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #73A950;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.5s; }
+
+.btn-topico:hover {
+  background-color: white;
+  color: #73A950;
+  border: solid #73A950 3px; }
+
+.btn-verde {
+  background-color: #73A950;
+  margin-left: 20px;
+  color: white; }
+
+.btn-verde:hover {
+  background-color: white;
+  color: #73A950;
+  border: solid #73A950; }
+
+.btn-danger {
+  background-color: #A02140;
+  margin-left: 20px; }
+
+.btn-danger:hover {
+  background-color: white;
+  color: #A02140;
+  border: solid #A02140; }
+
+.btn-warning {
+  background-color: #FFB819;
+  color: white;
+  margin-left: 20px; }
+
+.btn-warning:hover {
+  background-color: white;
+  color: #FFB819;
+  border: solid #FFB819; }
+
+.btn-light {
+  background-color: #E15829;
+  color: white;
+  margin-left: 20px; }
+
+.btn-light:hover {
+  background-color: white;
+  color: #E15829;
+  border: solid #E15829; }
+
+.btn-primary {
+  background-color: #61B4E4;
+  margin-left: 20px;
+  border: none; }
+
+.btn-primary:hover {
+  background-color: white;
+  color: #61B4E4;
+  border: solid #61B4E4; }
+
+/*CONTACTO*/
+.contacto__conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contacto__conteiner .contacto__caja {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 90%;
+    align-items: center; }
+    .contacto__conteiner .contacto__caja .contacto__formulario {
+      text-align: center;
+      font-size: 1rem;
+      color: #646467; }
+      .contacto__conteiner .contacto__caja .contacto__formulario .contacto__titulo {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #646467; }
+
+.datos__conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .datos__conteiner .datos__caja {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%; }
+    .datos__conteiner .datos__caja .datos__informacion {
+      text-align: center;
+      font-size: 1rem;
+      line-height: 1.6; }
+
+footer {
+  font-family: Gotham, Helvetica, Verdana, Sans Serif;
+  color: white;
+  background-image: linear-gradient(to bottom, #2F2E2E, #121111); }
+
+.footer__conteiner {
+  display: flex;
+  justify-content: center; }
+  .footer__conteiner .footer__caja {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "redes contacto" "InfoRedes InfoContacto";
+    justify-items: center;
+    width: 80%; }
+    .footer__conteiner .footer__caja #Redes {
+      grid-area: redes; }
+    .footer__conteiner .footer__caja #Contacto {
+      grid-area: contacto; }
+    .footer__conteiner .footer__caja #InfoRedes {
+      grid-area: InfoRedes; }
+    .footer__conteiner .footer__caja #InfoContacto {
+      grid-area: InfoContacto;
+      text-align: center; }
+    .footer__conteiner .footer__caja .footer__titulos {
+      font-weight: bold;
+      font-size: 1.5rem; }
+    .footer__conteiner .footer__caja .footer__informacion {
+      font-size: 1.2rem;
+      line-height: 3.0; }
+      .footer__conteiner .footer__caja .footer__informacion .footer__links {
+        color: white;
+        text-decoration-line: none;
+        padding: 4px;
+        border-radius: 2px;
+        transition: 0.5s; }
+      .footer__conteiner .footer__caja .footer__informacion .footer__links:hover {
+        text-decoration-line: none;
+        font-weight: bold;
+        color: black;
+        background-color: white; }
+      .footer__conteiner .footer__caja .footer__informacion .footer__logos {
+        margin-right: 10px; }
